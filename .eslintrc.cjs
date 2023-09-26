@@ -1,5 +1,5 @@
 module.exports = {
   extends: [
-    'airbnb',
+    'plugin:vue/vue3-recommended',
   ],
 };
