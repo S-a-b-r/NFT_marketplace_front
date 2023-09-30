@@ -9,6 +9,6 @@
       @apply py-10 px-8;
     }
     .title{
-        @apply font-semibold text-[1.75rem] leading-10
+        @apply font-semibold text-2xl leading-10
     }
   }
