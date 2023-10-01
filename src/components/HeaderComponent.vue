@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <header class="w-full flex py-4 px-8 items-center justify-between">
+  <header class="container flex py-4 px-[1.88rem] md:px-[3.12rem] items-center justify-between">
     <div class="font-second flex items-center">
       <img src="../assets/images/logo.svg">
       <span class="ml-2 lg:text-lg">NFT Marketplace</span>

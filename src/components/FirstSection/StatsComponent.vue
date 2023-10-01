@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col">
-        <span class="font-semibold text-xl">{{count}}</span>
-        <slot></slot>
+        <span class="font-semibold text-xl lg:text-2xl">{{count}}</span>
+        <slot class="lg:text-[1.5rem]"></slot>
     </div>
 </template>
 
@@ -10,7 +10,6 @@ import {defineProps} from 'vue';
 
 const props = defineProps({
     count: String,
-    title: String,
 })
 
 </script>

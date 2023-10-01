@@ -5,6 +5,10 @@ module.exports = {
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
     theme: {
+      screens: {
+        md: '843px',
+        lg: '1280px',
+      },
       colors: {
         'black' : '#2B2B2B',
         'gray': '#3B3B3B',
@@ -24,6 +28,14 @@ module.exports = {
         '3xl': ['2.375rem', '2.85rem'],
         '4xl': ['3.1875rem', ' 3.5rem'],
         '5xl': ['4.1875rem', '4.6rem'],
+      },
+      container: {
+        center: true,
+        padding: {
+          DEFAULT: '1.87rem',
+          'md': '4.5rem',
+          'lg': '7.2rem'
+        }
       },
       extend: {},
     },
