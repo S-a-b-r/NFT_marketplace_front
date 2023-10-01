@@ -9,6 +9,9 @@
       @apply container py-10 md:py-[5rem];
     }
     .title{
-        @apply font-semibold text-2xl leading-10 md:text-3xl lg:text-5xl
+        @apply font-semibold text-2xl md:text-3xl lg:text-5xl
+    }
+    .second_title {
+        @apply font-semibold text-2xl lg:text-3xl
     }
   }
