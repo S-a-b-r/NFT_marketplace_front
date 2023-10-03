@@ -1,5 +1,5 @@
-import ButtonComponent from "@/components/UI/ButtonComponent.vue"
+import UIButton from "./UIButton.vue"
 
 export default [
-    ButtonComponent
+    UIButton
 ]

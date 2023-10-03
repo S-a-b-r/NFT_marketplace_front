@@ -1,3 +1,13 @@
+<script setup>
+import StatsComponent from './StatsComponent.vue';
+
+const statsItems = [
+    {id:1, count: '240k+', title: 'Total Sale'},
+    {id:2, count: '100k+', title: 'Auctions'},
+    {id:3, count: '240k+', title: 'Artists'}
+]
+</script>
+
 <template>
     <section class="content_container md:grid md:grid-rows-2 md:grid-cols-2 md:gap-x-8">
         <div class="mb-5 md:row-start-1 md:row-end-2 md:col-span-1">
@@ -25,18 +35,8 @@
                     Get Started
             </ButtonComponent>
             <div class="flex justify-between lg:w-11/12">
-                <StatsComponent :count="'240k+'">Total Sale</StatsComponent>
-                <StatsComponent :count="'100k+'">Auctions</StatsComponent>
-                <StatsComponent :count="'240k+'">Artists</StatsComponent>
+                <StatsComponent v-for="statsItem in statsItems" :key="statsItem.id" :count="statsItem.count">Total Sale</StatsComponent>
             </div>
         </div>  
     </section>
 </template>
-
-<script setup>
-import StatsComponent from './StatsComponent.vue';
-</script>
-
-<style scoped>
-
-</style>
