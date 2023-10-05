@@ -7,32 +7,35 @@ const collections = [
     {
         id: 1,
         title: 'DSGN Animals',
-        collectionName: 'animals',
+        imagesTitle: 'animals',
         author: {
-            avatarUrl: '',
+            avatarUrl: '5',
             name: 'MrFox'
         },
-        counter: '1025+'
+        counter: '1025+',
+        class: 'grid',
     },
     {
         id: 2,
         title: 'Magic Mushrooms',
-        collectionName: 'mushrooms',
+        imagesTitle: 'mushrooms',
         author: {
-            avatarUrl: '',
+            avatarUrl: '6',
             name: 'Shoroomie'
         },
-        counter: '1025+'
+        counter: '1025+',
+        class: 'hidden md:grid',
     },
     {
         id: 3,
         title: 'Disco Machines',
-        collectionName: 'robots',
+        imagesTitle: 'robots',
         author: {
-            avatarUrl: '',
+            avatarUrl: '10',
             name: 'BeKind2Robots'
         },
-        counter: '1025+'
+        counter: '1025+',
+        class: 'hidden lg:grid'
     },
 ]
 </script>
@@ -46,10 +49,8 @@ const collections = [
             <span>Checkout our weekly updated trending collection.</span>
         </div>
         <div class="flex justify-between">
-            <!-- Как использовать v-if с v-for ???-->
-            <CollectionComponent collectionName="animals" counter="1025+"></CollectionComponent>
-            <CollectionComponent class="hidden md:grid" collectionName="mashrooms" counter="1025+"></CollectionComponent>
-            <CollectionComponent class="hidden lg:grid" collectionName="robots" counter="1025+"></CollectionComponent>
+            <CollectionComponent v-for="collection in collections" :key="collection.id"
+                :collection="collection" :class="collection.class"></CollectionComponent>
         </div>
     </section>
 </template>

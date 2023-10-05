@@ -9,11 +9,13 @@ const statsItems = [
 </script>
 
 <template>
-    <section class="content_container md:grid md:grid-rows-2 md:grid-cols-2 md:gap-x-8">
-        <div class="mb-5 md:row-start-1 md:row-end-2 md:col-span-1">
+    <section class="content_container 
+        md:grid md:grid-rows-[138px_66px_60px_57px] md:grid-cols-2 md:gap-y-[20px] md:gap-x-[30px]
+        lg:grid-rows-[347px_60px_77px] lg:gap-y-[30px]">
+        <div class="mb-5 md:row-start-1 md:row-end-3 lg:row-end-2">
             <h1 class="title mb-3 md:mb-5">Discover Digital Art & Collect NFTs</h1>
-            <div class="lg:text-xl">NFT marketplace UI created with Anima for Figma. Collect, 
-                buy and sell art from more than 20k NFT artists.
+            <div class="lg:text-xl lg:leading-[2.2rem]">NFT Marketplace UI Created With Anima For Figma. Collect, 
+                Buy And Sell Art From More Than 20k NFT Artists.
             </div>
         </div>
         <div class="md:col-start-2 md:row-start-1 md:row-end-4">
@@ -28,12 +30,14 @@ const statsItems = [
                 </div> 
             </div>
         </div>
-        <div class="md:row-start-2 md:row-end-4 md:col-start-1 md:col-end-2">
+        <div class="md:row-span-1">
             <ButtonComponent class="mb-10 w-full justify-center md:w-max md:px-12 md:mb-5" 
                 :is-purple="true" 
                 :icon-name="'RocketLaunch'">
                     Get Started
             </ButtonComponent>
+        </div>
+        <div class="md:row-span-1">
             <div class="flex justify-between lg:w-11/12">
                 <StatsComponent v-for="statsItem in statsItems" :key="statsItem.id" :count="statsItem.count">Total Sale</StatsComponent>
             </div>

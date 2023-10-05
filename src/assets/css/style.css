@@ -6,7 +6,7 @@
 
 @layer components {
     .content_container {
-      @apply container py-10 md:py-[5rem];
+      @apply container py-10 md:py-[2.5rem] lg:py-[5rem];
     }
     .title{
         @apply font-semibold text-2xl md:text-3xl lg:text-5xl
