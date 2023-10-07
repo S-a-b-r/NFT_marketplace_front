@@ -24,7 +24,7 @@ const author = props.collection.author;
             </div>
         </div>
         <div class="flex flex-col gap-2 mt-4">
-            <h3 class="text-xl">{{collection.title}}</h3>
+            <h3 class="text-xl font-semibold">{{collection.title}}</h3>
             <div class="flex gap-2">
                 <img width="24" height="24" :src="`/src/assets/images/avatars/${author.avatarUrl}.png`">
                 <span>{{author.name}}</span>

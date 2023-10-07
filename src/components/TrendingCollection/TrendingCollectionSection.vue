@@ -42,7 +42,7 @@ const collections = [
     <section class="content_container">
         <div class="mb-10">
             <h2 class="second_title">Trending Collection</h2>
-            <span>Checkout our weekly updated trending collection.</span>
+            <div class="mt-2">Checkout our weekly updated trending collection.</div>
         </div>
         <div class="flex justify-between">
             <CollectionComponent v-for="collection in collections" :key="collection.id"
