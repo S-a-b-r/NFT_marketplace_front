@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="flex">
+    <div class="flex flex-wrap gap-5">
         <CreatorItem v-for="user in props.creators" 
             :key="user.id" :user="user"/>
     </div>
