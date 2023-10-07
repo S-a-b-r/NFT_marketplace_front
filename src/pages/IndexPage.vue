@@ -1,8 +1,8 @@
 <script setup>
 import HeaderComponent from '@/components/HeaderComponent.vue';
-import FirstSection from '@/components/FirstSection/FirstSection.vue';
-import TrendingCollectionSection from '@/components/TrendingCollection/TrendingCollectionSection.vue';
-import TopCreatorsSection from '@/components/TopCreators/TopCreatorsSection.vue';
+import FirstSection from '@/components/sections/FirstSection.vue';
+import TrendingCollectionSection from '@/components/sections/TrendingCollectionSection.vue';
+import TopCreatorsSection from '@/components/sections/TopCreatorsSection.vue';
 
 </script>
 

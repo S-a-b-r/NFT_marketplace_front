@@ -1,5 +1,5 @@
 <script setup>
-import CreatorsList from '@/components/TopCreators/CreatorsList.vue';
+import CreatorsList from '@/components/CreatorsList.vue';
 const creators = [
     {
         id: 1,

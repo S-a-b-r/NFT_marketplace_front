@@ -1,5 +1,5 @@
 <script setup>
-import CollectionComponent from '@/components/TrendingCollection/CollectionComponent.vue';
+import CollectionComponent from '@/components/CollectionComponent.vue';
 
 const collections = [
     {

@@ -1,5 +1,5 @@
 <script setup>
-import StatsComponent from '@/components/FirstSection/StatsComponent.vue';
+import StatsComponent from '@/components/StatsComponent.vue';
 
 const statsItems = [
     {id:1, count: '240k+', title: 'Total Sale'},
