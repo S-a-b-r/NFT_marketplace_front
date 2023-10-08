@@ -1,6 +1,6 @@
 <script>
  export default {
-    name: 'ButtonComponent'
+    name: 'UIButton'
  }
 </script>
 
@@ -11,7 +11,7 @@ const props = defineProps({
     iconName: String,
     isPurple: {
         type: Boolean,
-        default: true
+        default: false
     }
 })
 

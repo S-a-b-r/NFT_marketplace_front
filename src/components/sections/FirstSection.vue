@@ -31,11 +31,11 @@ const statsItems = [
             </div>
         </div>
         <div class="md:row-span-1">
-            <ButtonComponent class="mb-10 w-full justify-center md:w-max md:px-12 md:mb-5" 
+            <UIButton class="mb-10 w-full justify-center md:w-max md:px-12 md:mb-5" 
                 :is-purple="true" 
                 :icon-name="'RocketLaunch'">
                     Get Started
-            </ButtonComponent>
+            </UIButton>
         </div>
         <div class="md:row-span-1">
             <div class="flex justify-between lg:w-11/12">
