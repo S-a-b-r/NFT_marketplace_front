@@ -7,10 +7,28 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="rounded bg-gray" >
-        <div class="w-full" :class="`bg-[url('src/assets/images/categories/${props.category.bgUrl}.png')]`">
-            <img height="80" width="80" :src="`src/assets/images/categories/icons/${props.category.iconUrl}.svg`" />
+    <router-link to="/categories" class="category_item_wrapper rounded bg-gray overflow-hidden">
+        <div class=" w-full h-[142px] bg-cover bg-center" 
+            :style="`background-image:url('src/assets/images/categories/${props.category.bgUrl}.png')`">
+            <div class="bg_blur w-full h-full flex align-middle justify-center">
+                <img height="80" width="80" class="category_icon" :src="`src/assets/images/categories/icons/${props.category.iconUrl}.svg`" />
+            </div>
         </div>
-        {{ props.category.title }}
-    </div>
+        <div class="p-5">
+            {{ props.category.title }}
+        </div>
+    </router-link>
 </template>
+
+<style>
+.category_item_wrapper:hover .bg_blur{
+    backdrop-filter: blur(0px);
+}
+.category_item_wrapper:hover .category_icon{
+    display: none;;
+}
+.bg_blur{
+    backdrop-filter: blur(5px);
+}
+
+</style>

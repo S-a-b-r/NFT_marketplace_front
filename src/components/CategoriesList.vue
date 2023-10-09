@@ -8,7 +8,8 @@ defineProps({
 </script>
 
 <template>
-    <div class="grid grid-cols-2 grid-rows-4 gap-5">
+    <div class="grid grid-cols-2 grid-rows-4 gap-5
+        md:grid-cols-4 md:grid-rows-2 md:gap-7">
         <CategoryItem v-for="category in categories" 
             :key="category.id" :category="category"/>
     </div>
