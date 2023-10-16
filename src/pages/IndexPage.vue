@@ -9,6 +9,14 @@ import ActiveAuction from '@/components/sections/ActiveAuction.vue';
 
 const activeAuctionInfo = {
     bgUrl : "src/assets/images/auction_bg.png",
+    creator: {
+        name: 'Shroomie',
+        avatarUrl: '8'
+    },
+    title: 'Magic Mashrooms',
+    endAuctionHours: 59,
+    endAuctionMinutes: 59,
+    endAuctionSeconds: 59,
 }
 </script>
 
@@ -19,5 +27,5 @@ const activeAuctionInfo = {
     <TopCreatorsSection />
     <CategoriesSection />
     <DiscoverMoreSection />
-    <ActiveAuction bgUrl="src/assets/images/auction_bg.png" />
+    <ActiveAuction :activeAuction="activeAuctionInfo" />
 </template>
