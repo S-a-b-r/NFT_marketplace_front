@@ -49,7 +49,7 @@ const nftCards = [
         </div>
         <NFTCardsList class="md:col-span-2" :nftCards="nftCards" />
         <div class="md:col-start-2 md:row-start-1 relative">
-            <UIButton class="justify-center w-full md:px-12 md:w-max md:absolute right-0 bottom-0" iconName="Eye-purple">See all</UIButton>
+            <UIButton class="justify-center w-full md:px-12 md:w-max md:absolute right-0 bottom-0" iconName="Eye-purple" isTransparent>See all</UIButton>
         </div>
     </section>
 </template>

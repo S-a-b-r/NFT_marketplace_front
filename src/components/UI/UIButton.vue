@@ -9,13 +9,18 @@ import {defineProps, computed} from 'vue';
 
 const props = defineProps({
     iconName: String,
-    isPurple: {
-        type: Boolean,
-        default: false
-    }
+    
+    //Colors Button
+    isPurple: Boolean,
+    isWhite: Boolean,
+    isTransparent: Boolean,
 })
 
-const btnClass = computed(() => props.isPurple ? 'bg-purple':'bg-none border border-solid border-purple')
+const btnClass = computed(() => [
+    {'bg-purple': props.isPurple },
+    {'bg-none border border-solid border-purple': props.isTransparent},
+    {'bg-white text-black': props.isWhite}
+])
 </script>
 
 <template>

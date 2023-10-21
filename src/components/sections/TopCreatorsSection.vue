@@ -89,7 +89,7 @@ const creators = [
         </div>
         <CreatorsList class="md:row-start-2 md:col-span-2" :creators="creators" />
         <div class="mt-10 md:row-start-1 md:col-start-2 md:mt-2 md:relative">
-            <UIButton class="w-full justify-center md:w-max md:px-[3.12rem] md:absolute bottom-0 right-0" iconName="RocketLaunch-purple">View Rankings</UIButton>
+            <UIButton class="w-full justify-center md:w-max md:px-[3.12rem] md:absolute bottom-0 right-0" iconName="RocketLaunch-purple" isTransparent>View Rankings</UIButton>
         </div>
     </section>
 </template>
