@@ -1,20 +1,17 @@
 <script setup>
 import {defineProps, ref} from 'vue';
+import TimerCard from '../TimerCard.vue';
 
 const props = defineProps({
     activeAuction: Object,
 })
-
-const hours = ref(props.activeAuction.endAuctionHours);
-const minutes = ref(props.activeAuction.endAuctionMinutes);
-const seconds = ref(props.activeAuction.endAuctionSeconds);
 </script>
 
 <template>
-    <div class="h-screen" 
+    <div class="h-screen flex" 
         :style="`background:linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
             center / cover no-repeat url(${props.activeAuction.bgUrl});`">
-        <div class="content_container pt-[7.5rem] grid gap-7">
+        <div class="content_container align-middle m-auto grid gap-7">
             <div class="bg-gray rounded w-max px-5 py-2 flex gap-3">
                 <img width="24" height="24" :src="`src/assets/images/avatars/${props.activeAuction.creator.avatarUrl}.png`" />
                 {{ props.activeAuction.creator.name }}
@@ -22,28 +19,9 @@ const seconds = ref(props.activeAuction.endAuctionSeconds);
             <div class="text-3xl font-semibold text-white">
                 {{ props.activeAuction.title }}
             </div>
-            <div class="bg-blur p-7 rounded text-sm font-second">
-                <div class="mb-2">Auction ends in:</div>
-                <div class="flex justify-between">
-                    <div class="flex flex-col">
-                        <div class="text-3xl font-semibold">{{ hours }}</div>
-                        <div>Hours</div>
-                    </div>
-                    <div class="text-3xl">
-                        :
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="text-3xl font-semibold">{{ minutes }}</div>
-                        <div>Minutes</div>
-                    </div>
-                    <div class="text-3xl">
-                        :
-                    </div>
-                    <div class="flex flex-col">
-                        <div class="text-3xl font-semibold">{{ seconds }}</div>
-                        <div>Seconds</div>
-                    </div>
-                </div>
+            <timer-card :endAuctionTime="props.activeAuction.endAuctionTime"></timer-card>
+            <div>
+                <UIButton class="w-full justify-center" iconName="Eye-purple" isWhite>See NFT</UIButton>
             </div>
         </div>
     </div>

@@ -9,7 +9,7 @@ import {defineProps, computed} from 'vue';
 
 const props = defineProps({
     iconName: String,
-    
+
     //Colors Button
     isPurple: Boolean,
     isWhite: Boolean,
@@ -24,7 +24,7 @@ const btnClass = computed(() => [
 </script>
 
 <template>
-    <button class="px-8 py-4 rounded-[20px] flex items-center" :class="btnClass">
+    <button class="px-8 py-4 rounded-[20px] flex items-center font-semibold" :class="btnClass">
         <img v-if="props.iconName" class="mr-3" :src="'/src/assets/images/icons/'+iconName+'.svg'"
             width="20" height="20"/>
         <slot></slot>

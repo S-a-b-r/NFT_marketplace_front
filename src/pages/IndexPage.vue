@@ -14,9 +14,11 @@ const activeAuctionInfo = {
         avatarUrl: '8'
     },
     title: 'Magic Mashrooms',
-    endAuctionHours: 59,
-    endAuctionMinutes: 59,
-    endAuctionSeconds: 59,
+    endAuctionTime: {
+        endAuctionHours: 59,
+        endAuctionMinutes: 59,
+        endAuctionSeconds: 59,
+    }
 }
 </script>
 
