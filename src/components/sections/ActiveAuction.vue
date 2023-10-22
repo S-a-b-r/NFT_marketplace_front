@@ -8,20 +8,23 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="h-screen flex" 
+    <div class="h-screen flex flex-col justify-center md:justify-end" 
         :style="`background:linear-gradient(180deg, rgba(162, 89, 255, 0.00) 0%, #A259FF 100%),
             center / cover no-repeat url(${props.activeAuction.bgUrl});`">
-        <div class="content_container align-middle m-auto grid gap-7">
-            <div class="bg-gray rounded w-max px-5 py-2 flex gap-3">
+        <div class="content_container grid gap-y-7
+                md:grid-cols-[1fr_18.5rem] md:grid-rows-[2.75rem_1fr_3.75rem] md:pb-[3.75rem]">
+            <div class="bg-gray rounded w-max px-5 py-2 flex gap-3
+                    md:col-end-2">
                 <img width="24" height="24" :src="`src/assets/images/avatars/${props.activeAuction.creator.avatarUrl}.png`" />
                 {{ props.activeAuction.creator.name }}
             </div>
-            <div class="text-3xl font-semibold text-white">
+            <div class="text-3xl font-semibold text-white
+                md:col-end-2 lg:text-4xl">
                 {{ props.activeAuction.title }}
             </div>
-            <timer-card :endAuctionTime="props.activeAuction.endAuctionTime"></timer-card>
+            <timer-card class="md:col-start-2 md:row-start-2 md:row-end-4" :endAuctionTime="props.activeAuction.endAuctionTime"></timer-card>
             <div>
-                <UIButton class="w-full justify-center" iconName="Eye-purple" isWhite>See NFT</UIButton>
+                <UIButton class="w-full justify-center md:w-max md:px-12" iconName="Eye-purple" isWhite>See NFT</UIButton>
             </div>
         </div>
     </div>
