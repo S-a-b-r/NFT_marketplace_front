@@ -7,6 +7,7 @@ import CategoriesSection from '@/components/sections/CategoriesSection.vue';
 import DiscoverMoreSection from '@/components/sections/DiscoverMoreSection.vue';
 import ActiveAuction from '@/components/sections/ActiveAuction.vue';
 import HowItWorksSection from '../components/sections/HowItWorksSection.vue';
+import JoinOurDigestSection from '../components/sections/JoinOurDigestSection.vue';
 
 const activeAuctionInfo = {
     bgUrl : "src/assets/images/auction_bg.png",
@@ -32,4 +33,5 @@ const activeAuctionInfo = {
     <DiscoverMoreSection />
     <ActiveAuction :activeAuction="activeAuctionInfo" />
     <HowItWorksSection />
+    <JoinOurDigestSection />
 </template>
