@@ -54,8 +54,8 @@ const categories = [
 </script>
 
 <template>
-    <div class="content_container">
+    <section class="content_container">
         <h2 class="second_title mb-10 lg:mb-[3.75rem]">Browse Categories</h2>
         <CategoriesList :categories="categories"/>
-    </div>
+    </section>
 </template>

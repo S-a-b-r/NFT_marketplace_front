@@ -1,5 +1,5 @@
 <template>
-    <div class="content_container flex flex-col gap-[30px]
+    <section class="content_container flex flex-col gap-[30px]
             md:bg-gray md:flex-row md:rounded lg:gap-[80px]">
         <div id="space-bg" class="w-[315px] h-[255px] rounded-[20px] self-center md:w-[300px] md:h-[280px] lg:w-1/2 lg:h-[310px]"></div>
         <div class="md:self-center lg:w-1/2">
@@ -14,8 +14,7 @@
                 </div>
             </div>
         </div>
-
-    </div>
+    </section>
 </template>
 
 <script setup>
