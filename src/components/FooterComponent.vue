@@ -2,9 +2,9 @@
 
 <template>
     <section class="content_container bg-gray">
-        <div class="font-second flex items-center">
+        <div class="flex items-center font-second">
             <img src="src/assets/images/logo.svg" />
-            <span class="lg:text-lg ml-2">NFT Marketplace</span>
+            <span class="lg:text-lg ml-2">NFT Marketplace </span>
         </div>
     </section>
 </template>
