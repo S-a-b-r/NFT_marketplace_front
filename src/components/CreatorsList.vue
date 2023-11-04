@@ -1,6 +1,6 @@
 <script setup>
-import { defineProps } from 'vue';
-import CreatorItem from '@/components/CreatorItem.vue';
+import { defineProps } from "vue";
+import CreatorItem from "@/components/CreatorItem.vue";
 
 const props = defineProps({
     creators: Array,
@@ -11,9 +11,9 @@ props.creators.forEach(
 );
 
 function getVisibleClass(id) {
-    if (id < 6) return 'flex';
-    if (id == 6) return 'hidden md:flex';
-    if (id > 6) return 'hidden lg:flex';
+    if (id < 6) return "flex";
+    if (id == 6) return "hidden md:flex";
+    if (id > 6) return "hidden lg:flex";
 }
 </script>
 

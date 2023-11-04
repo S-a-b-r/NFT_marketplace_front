@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps, ref } from 'vue';
+import { defineProps, ref } from "vue";
 
 const props = defineProps({
     endAuctionTime: Object,

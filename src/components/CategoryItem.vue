@@ -1,5 +1,5 @@
 <script setup>
-import { defineProps } from 'vue';
+import { defineProps } from "vue";
 
 const props = defineProps({
     category: Object,
@@ -24,7 +24,6 @@ const props = defineProps({
                 />
             </div>
         </div>
-
         <div class="p-5 font-semibold lg:text-xl">
             {{ props.category.title }}
         </div>
@@ -36,6 +35,7 @@ const props = defineProps({
     transition: 0.2s;
     width: 130px;
 }
+
 .bg_blur {
     backdrop-filter: blur(5px);
 }
