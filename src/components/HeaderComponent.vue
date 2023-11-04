@@ -6,7 +6,7 @@
     >
         <div class="flex items-center font-second">
             <img src="../assets/images/logo.svg" />
-            <span class="lg:text-lg ml-2">NFT Marketplace </span>
+            <span class="ml-2 text-xl">NFT Marketplace </span>
         </div>
         <nav>
             <img class="lg:hidden" src="../assets/images/icons/List.svg" />
